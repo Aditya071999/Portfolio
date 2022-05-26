@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-eqiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            #more {display: none;}
+            </style>
+    </head>
+    <script>
+        function myFunction() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+        
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "inline";
+          }
+        }
+        </script>
+        <body>
+    <div>
+        <div class="container">
+            <div class="sidebar sidebargo">
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</li></a> 
+                <li><a href="about.html">About</li></a>
+                <li><a href="skill.html">Skill</li></a>
+                <li><a href="project.html">Project</li></a>
+                <li><a href="contact.html">Contact me</li></a>
+                </ul>
+            </nav>
+        </div>
+        <div class="main5">
+            <div class="hamburger">
+                <img class="ham" src="ham.png" alt="" width="23px">
+                <img class="cross" src="cross.png" alt="" width="20px">
+            </div>
+            <div class="pr">
+           <div class="fr"> <b class="font-effect-fire">My Project Details</b></div>
+            <h2><u>Online Library Management System</u> </h2>
+            <p><b>Library Management System using PHP and MySQL is a web based application. Library management system is a
+                 project which aims in developing a computerized system to maintain all the daily work of library .
+                 This project has many features which are generally not available in normal library management systems like facility
+                 of user login and a facility of admin login .It also has a facility of admin login through
+                 which the admin can monitor the whole system . It has also a facility where student after logging in their
+                  accounts can see list of
+                  books issued and its issue date and return date.
+                <span id="dots">...</span><span id="more"><br>
+                   <b style="font-size: 24px; color: rgb(255, 0, 0);"><u>LMS Project Modules</u></b><br>
+                  <b> Online library Management System divided in two modules–</b><br>
+                   1.Student<br>
+                   2.Admin<br>
+                   <br><br>
+                   <b>Admin Features-</b><br>
+                  1. Admin Dashboard<br>
+2.Admin can add/update/ delete category<br>
+3.Admin can add/update/ delete author<br>
+4.Admin can add/update/ delete books<br>
+5.Admin can issue a new book to student and also update the details when student return book<br>
+6.Admin can search student by using their student ID<br>
+7.Admin can also view student details<br>
+8.Admin can change own password<br>
+<br><br>
+<b>Students-</b><br>
+1.Student can register yourself and after registration they will get studentid<br>
+2.After login student can view own dashboard.<br>
+3.Stduents can also view the listed books in the library.<br>
+ 4.Student can update own profile.<br>
+5.Student can view issued book and book return date-time.<br>
+6.Student can also change own password.<br>
+7.Student can also recover own password.<br>
+<br><br>
+<b style="font-size: 24px; color: rgb(255, 0, 0);"><u>LMS Project OutputScreen</u></b><br>
+<b>HomePage</b><br>
+                   <img src=ss11.png width="40%" height="20%" style="margin-left: 100px;">
+                <br><br>
+                <b>Students (User) Dashboard</b><br>
+                <img src=ss12.png width="40%" height="20%" style="margin-left: 100px;"><br>
+            <b>Listed Books</b><br>
+            <img src=ss13.png width="40%" height="20%" style="margin-left: 100px;">
+        <br>
+    <b>Admin Dashboard</b><br>
+    <img src=ss14.png width="40%" height="20%" style="margin-left: 100px;">
+</span>
+                </p>
+                    <button onclick="myFunction()" id="myBtn" class="btn">Read more</button>
+                    
+                    
+            </div>
+        </div>
+       </div>
+    </div><script src="script.js"></script>
+    </body>
+</html>
